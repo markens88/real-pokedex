@@ -1,0 +1,69 @@
+page-list {
+  ion-avatar {
+    border-radius: 0;
+  }
+  .type {
+    min-width: 30px;
+    padding: 2px 5px;
+    margin: 2px;
+    font-size: 12px;
+    border-radius: 3px;
+    background-color: #ada495;
+    color: #fff;
+    text-align: center;
+    &.Bug {
+      background-color: #8a970f;
+    }
+    &.Dark {
+      background-color: #3e2d23;
+    }
+    &.Dragon {
+      background-color: #6151b3;
+    }
+    &.Electric {
+      background-color: #e99205;
+    }
+    &.Fairy {
+      background-color: #ce8fcd;
+    }
+    &.Fighting {
+      background-color: #662716;
+    }
+    &.Fire {
+      background-color: #c51d00;
+    }
+    &.Flying {
+      background-color: #5d73d7;
+    }
+    &.Ghost {
+      background-color: #46468f;
+    }
+    &.Grass {
+      background-color: #68bb2b;
+    }
+    &.Ground {
+      background-color: #907734;
+    }
+    &.Ice {
+      background-color: #6bd3f4;
+    }
+    &.Normal {
+      background-color: #ada495;
+    }
+    &.Poison {
+      background-color: #612a63;
+    }
+    &.Psychic {
+      background-color: #dd2e65;
+    }
+    &.Rock {
+      background-color: #74642c;
+    }
+    &.Steel {
+      background-color: #8f8e9e;
+    }
+    &.Water {
+      background-color: #0d67c1;
+    }
+  }
+}

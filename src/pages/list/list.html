@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Pokédex</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <button ion-item *ngFor="let pokemon of pokedex; let i=index" (click)="itemTapped($event, pokemon)">
+      <ion-avatar item-start>
+        <img src="{{pokemon.img}}">
+      </ion-avatar>
+      <h2>#{{i+1}} {{pokemon.name}}</h2>
+      <div item-end>
+        <div class="type {{type}}" *ngFor="let type of pokemon.type">
+          {{type}}
+        </div>
+      </div>
+    </button>
+  </ion-list>
+  <div *ngIf="selectedItem" padding>
+    You navigated here from
+    <b>{{selectedItem.title}}</b>
+  </div>
+</ion-content>
