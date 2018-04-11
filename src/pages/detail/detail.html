@@ -1,12 +1,11 @@
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>{{pokemon.name}}</ion-title>
+<ion-header no-border>
+  <ion-navbar class="transparent" mode="ios">
   </ion-navbar>
 </ion-header>
 
-<ion-content text-center>
-  <img src="{{pokemon.img}}">
+<ion-content text-center class="type-background" [style.background-image]="'url(' + typeBg + ')'">
+  <div class="info" padding>
+    <img src="{{pokemon.img}}" margin>
+    <h2 margin-top>#{{pokemon.num}} {{pokemon.name}}</h2>
+  </div>
 </ion-content>
